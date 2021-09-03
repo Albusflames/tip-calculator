@@ -1,0 +1,155 @@
+html{
+    background-color: hsl(185, 41%, 84%);
+}
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo {
+    display: block;
+    margin: 20px 0px 20px 0px;
+}
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%) ;
+    padding: 20px;
+    border-radius: 10px;
+}
+#bill {
+    background-image: url(images/icon-dollar.svg);
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+#people {
+    background-image: url(images/icon-person.svg);
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+}
+#people:hover {
+    cursor: pointer;
+}
+
+#people:valid {
+    border: 0px;
+}
+#bill, #people{
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 0px 5px 0px;
+}
+#bill:hover, #people:hover {
+    cursor: pointer;
+}
+#buttonContainer {
+    margin: 20px 0px 20px 0px;
+}
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px 0px 10px 0px;
+}
+ #buttons button, #button input  { 
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+ }
+ #buttons button:hover{
+     background-color: hsl(180, 85%, 43%);
+     border: 0px;
+     cursor: pointer;
+ }
+ #custom {
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    border-radius: 5px;
+    height: 100%;
+ }
+ #custom:hover, #custom:active {
+    border: 2px solid hsl(180, 85%, 43%);
+    cursor: pointer;
+ }
+
+ label {
+     margin: 10px 0px 5px 0px;
+ }
+input[type=number]{
+    text-align: right;
+}
+input{
+    display:block;
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    margin: 10px 0px 5px 0px;
+    
+
+}
+.display{
+    background-color: hsl(183, 100%, 15%);
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+}
+.display #amount, .display #tAmount {
+    float: right;
+    color: hsl(180, 85%, 43%);
+    font-size: 140%;
+    font-weight: 700;
+}
+.display .per {
+    font-weight: 100;
+
+}
+.display button[type=reset] {
+    width: 80%;
+    height: 30px;
+    margin: 0px 10% 0px 10%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: hsl(180, 85%, 43%);
+}
+.display button[type=reset]:hover {
+    cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+    #logo {
+    display: block;
+    margin: 40px 0px 40px 0px;
+}
+    main {
+        flex-direction: row;
+        height: auto;
+    }
+    .display {
+        width: 50%;
+        height: 20em;
+        margin: 0px 0px 0px 20px;
+        padding: 0px 20px 0px 20px;
+    }
+    form {
+        width: 50%;
+        height: 100%;
+    }
+    button[type=reset] {
+        position: relative;
+        bottom: 0px;
+
+    }
+    #buttons {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    #totalContainer {
+        margin-bottom: 50%;
+    }
+}
