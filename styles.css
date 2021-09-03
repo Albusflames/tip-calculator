@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
 html{
     background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
 }
 body {
     display:flex;
@@ -94,8 +97,8 @@ input{
 .display{
     background-color: hsl(183, 100%, 15%);
     width: 100%;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 30px;
     margin: 10px 0px 10px 0px;
     color: white;
 }
@@ -106,8 +109,11 @@ input{
     font-weight: 700;
 }
 .display .per {
-    font-weight: 100;
+    font-weight: 400;
 
+}
+.display p {
+    font-weight: 700;
 }
 .display button[type=reset] {
     width: 80%;
@@ -134,15 +140,12 @@ input{
         width: 50%;
         height: 20em;
         margin: 0px 0px 0px 20px;
-        padding: 0px 20px 0px 20px;
+        padding: 25px 20px 0px 20px;
     }
     form {
         width: 50%;
         height: 100%;
     }
-    button[type=reset] {
-        position: relative;
-        bottom: 0px;
 
     }
     #buttons {
@@ -150,6 +153,5 @@ input{
         grid-gap: 10px;
     }
     #totalContainer {
-        margin-bottom: 50%;
+        margin-bottom: 40%;
     }
-}
